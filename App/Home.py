@@ -8,9 +8,9 @@ if "shared" not in st.session_state:
    st.session_state["shared"] = True
 
 st.set_page_config(
-    page_title="Data Science Portfolio | Chris DeAngelis, CFA 2023",
+    page_title="Evaluate My Data Stack With Spaulding Ridge",
     page_icon=":bar_chart:", #"👋",
-    initial_sidebar_state="expanded",
+    #initial_sidebar_state="expanded",
     menu_items={
         #'Get Help': 'http://google.com'#'chris.deangelis@elkay.com'#,
         #'Report a bug': "https://www.extremelycoolapp.com/bug",
@@ -24,35 +24,37 @@ st.set_page_config(
 #)
 #display_links(readme["links"]["repo"], readme["links"]["article"])
 
-st.write("# Welcome to my Data Science portfolio👋")#:bar_chart::rocket:")
-if (st.experimental_user.email == "chris.deangelis@elkay.com"):
-    st.write("Hi Chris DeAngelis")
-else:
-    st.write("")
+st.write("# Evaluate Your Current Data Stack and Compare Alternatives")#:bar_chart::rocket:")
 st.markdown(
         """
-        This app is intended to showcase a few examples of my data science capabilities. Please reach out to Chris DeAngelis with any ideas or questions.
-
-        ### Table of Contents
-
-        - Check out [streamlit.io](https://streamlit.io)
+        ### Select products you use today across the major 
+        1. Data Ingestion
+        2. Data Storage & Transformation
+        3. Data Catalog & Governance
+        4. Data Analytics & Publication        
         """
 )
+#st.title('Data Ingestion')
+with st.expander("Data Ingestion", expanded=True):
+    st.multiselect(
+             "Choose Business Verticals", list(set(['A','B','C')), ['B']
+    )
 
-# Initialization of session
-#if 'key' not in st.session_state:
-#    st.session_state['key'] = 'value'
+with st.expander("Data Storage & Transformation", expanded=True):
+    st.multiselect(
+             "Choose Business Verticals", list(set(['A','B','C')), ['B']
+    )
 
-# Securely get query data
-#url = 'https://raw.githubusercontent.com/topherdea/Zurn_Elkay_Water_Solutions/main/Invoices_Query_Daily?token=GHSAT0AAAAAAB6PF4VETFFGOOXLY7A46CDCZBN3XTA'
-#query_page = requests.get(url)
-#zews_query = query_page.text
+with st.expander("Data Catalog & bGovernance", expanded=True):
+    st.multiselect(
+             "Choose Business Verticals", list(set(['A','B','C')), ['C']
+    )
 
-# Load config
-#config = configparser.ConfigParser()
-#config.read_file(open(r'OAC Query.txt'))
-#query = config.get('query', 'query')
-#st.write(query)
+with st.expander("Data Analytics & Publication ", expanded=True):
+    st.multiselect(
+             "Choose Business Verticals", list(set(['A','B','C')), ['B']
+    )
+
 
 #zews_query = st.secrets.credentials.zews_query
 #@st.cache_resource(ttl=43200) # Update every 10 minutes = 600
@@ -109,10 +111,10 @@ st.markdown(
 #m1.write('')
 
 # Using object notation
-add_selectbox = st.sidebar.selectbox(
-    "Contact Me",
-    ("Email", "LinkedIn", "Github Profile")
-)
+#Add_selectbox = st.sidebar.selectbox(
+#    "Contact Me",
+#    ("Email", "LinkedIn", "Github Profile")
+#)
 
 # Load logo
 def add_logo():
