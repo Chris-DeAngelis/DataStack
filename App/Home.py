@@ -35,23 +35,23 @@ st.markdown(
         """
 )
 #st.title('Data Ingestion')
-a = with st.expander("Data Ingestion", expanded=True):
-    st.multiselect(
+with st.expander("Data Ingestion", expanded=True):
+    a = st.multiselect(
              "Choose Business Verticals", ['A','B','C'], ['B']
     )
 
-b = with st.expander("Data Storage & Transformation", expanded=True):
-    st.multiselect(
+with st.expander("Data Storage & Transformation", expanded=True):
+   b = st.multiselect(
              "Choose Business Verticals", ['A','B','C'], ['B']
     )
 
-c = with st.expander("Data Catalog & bGovernance", expanded=True):
-    st.multiselect(
+with st.expander("Data Catalog & bGovernance", expanded=True):
+    c = st.multiselect(
              "Choose Business Verticals", ['A','B','C'], ['C']
     )
 
-d = with st.expander("Data Analytics & Publication ", expanded=True):
-    st.multiselect(
+with st.expander("Data Analytics & Publication ", expanded=True):
+    d = st.multiselect(
              "Choose Business Verticals", ['A','B','C'], ['B']
     )
 
