@@ -37,25 +37,25 @@ st.markdown(
 #st.title('Data Ingestion')
 with st.expander("Data Ingestion", expanded=True):
     a = st.multiselect(
-             "Choose Business Verticals", ['A','B','C'], ['B'],
+             "", ['A','B','C'], ['B'],
        key = 1
     )
 
 with st.expander("Data Storage & Transformation", expanded=True):
    b = st.multiselect(
-             "Choose Business Verticals", ['A','B','C'], ['B'],
+             "", ['A','B','C'], ['B'],
        key = 2
     )
 
 with st.expander("Data Catalog & Governance", expanded=True):
     c = st.multiselect(
-             "Choose Business Verticals", ['A','B','C'], ['C'],
+             "", ['A','B','C'], ['C'],
        key = 3
     )
 
 with st.expander("Data Analytics & Publication ", expanded=True):
     d = st.multiselect(
-             "Choose Business Verticals", ['A','B','C'], ['B'],
+             "", ['A','B','C'], ['B'],
        key = 4
     )
 
