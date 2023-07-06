@@ -47,7 +47,7 @@ with st.expander("Data Storage & Transformation", expanded=True):
        key = 2
     )
 
-with st.expander("Data Catalog & bGovernance", expanded=True):
+with st.expander("Data Catalog & Governance", expanded=True):
     c = st.multiselect(
              "Choose Business Verticals", ['A','B','C'], ['C'],
        key = 3
