@@ -37,25 +37,25 @@ st.markdown(
 #st.title('Data Ingestion')
 with st.expander("Data Ingestion", expanded=True):
     a = st.multiselect(
-             "", ['A','B','C'], ['B'],
+             "Select one or more tools:", ['A','B','C'], ['B'],
        key = 1
     )
 
 with st.expander("Data Storage & Transformation", expanded=True):
    b = st.multiselect(
-             "", ['A','B','C'], ['B'],
+             "Select one or more tools:", ['A','B','C'], ['B'],
        key = 2
     )
 
 with st.expander("Data Catalog & Governance", expanded=True):
     c = st.multiselect(
-             "", ['A','B','C'], ['C'],
+             "Select one or more tools:", ['A','B','C'], ['C'],
        key = 3
     )
 
 with st.expander("Data Analytics & Publication ", expanded=True):
     d = st.multiselect(
-             "", ['A','B','C'], ['B'],
+             ""Select one or more tools:, ['A','B','C'], ['B'],
        key = 4
     )
 
